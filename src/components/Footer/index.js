@@ -124,8 +124,8 @@ class Footer extends React.Component {
               <div className="row text-center justify-content-center">
                 <div className="col-md-6 col-lg-5">
                   <p className="copyright-text pb-0 mb-0">
-                    Copyrights © 2019. All rights reserved by 
-                    <a href="/#"> ThemeTags</a>
+                    Copyrights © 2020. All rights reserved by
+                    <a href="/#"> Taasai</a>
                   </p>
                 </div>
               </div>

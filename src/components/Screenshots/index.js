@@ -23,7 +23,7 @@ export default class Screenshots extends React.Component {
     return (
       <React.Fragment>
         <section
-          id="screenshots"
+          // id="screenshots"
           className="screenshots-section ptb-100 gray-light-bg"
         >
           <div className="container">

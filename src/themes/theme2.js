@@ -11,6 +11,7 @@ import VideoSection from "components/Video";
 import PricingSection from "components/Pricing";
 import Testimonial from "components/Testimonial";
 import Screenshots from "components/Screenshots";
+import Contact from "components/Contact";
 import FaqSection from "components/Faq";
 import TeamMember from "components/TeamMember";
 import ContactSection from "components/Contact";
@@ -25,12 +26,13 @@ class Theme extends Component {
         <Header />
         <div className="main">
           <HeroSection />
-          <PromoSection />
+          {/*<PromoSection />*/}
           <RideSection />
           <FareSection />
-          <FeatureSection />
+          {/*<FeatureSection />*/}
           <Screenshots />
           <BlogSection />
+          <Contact />
           {/*<VideoSection showDownloadBtn={true} />*/}
           {/*<PricingSection showTitle={true} hideFaq={true} />*/}
           {/*<Testimonial />*/}

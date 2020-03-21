@@ -5,10 +5,13 @@
   "homepage": "http://appco-react.themetags.com",
   "dependencies": {
     "react": "^16.11.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.11.0",
     "react-redux": ">=5.0.7",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.1",
+    "react-scrollspy": "^3.4.2",
+    "react-scrollspy-nav": "^1.2.3",
     "redux": ">=4.0.0",
     "redux-devtools-extension": "^2.13.8"
   },
