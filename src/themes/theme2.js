@@ -5,6 +5,7 @@ import HeroSection from "components/HeroSection/HeroSection2";
 import PromoSection from "components/PromoSection/Promo2";
 import RideSection from "components/AboutUs/AboutUs6";
 import FareSection from "components/FareEstimate";
+import RoundUp from "components/RoundUp";
 import FeatureSection from "components/Features/Feature2";
 import BlogSection from "components/Blog";
 import VideoSection from "components/Video";
@@ -29,6 +30,7 @@ class Theme extends Component {
           {/*<PromoSection />*/}
           <RideSection />
           <FareSection />
+          <RoundUp />
           {/*<FeatureSection />*/}
           <Screenshots />
           <BlogSection />

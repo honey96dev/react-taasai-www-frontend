@@ -75,3 +75,36 @@ code {
     font-size: 38px !important;
   }
 }
+
+.roundup-heading {
+  line-height: 20px !important;
+  font-size: 18px !important;
+}
+
+@media screen and (min-width: 575px) {
+  .roundup-heading {
+    line-height: 24px !important;
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .roundup-heading {
+    line-height: 26px !important;
+    font-size: 23px !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .roundup-heading {
+    line-height: 30px !important;
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .roundup-heading {
+    line-height: 35px !important;
+    font-size: 28px !important;
+  }
+}

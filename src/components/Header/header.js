@@ -26,9 +26,10 @@ class Header extends React.Component {
       }, {
         id: "roundup_section",
         title: "Round Up",
-        type: this.LINK_TYPE.LINK,
-        link: "//roundup.taasai.com",
-        target: "_blank",
+        type: this.LINK_TYPE.SECTION,
+        // type: this.LINK_TYPE.LINK,
+        // link: "//roundup.taasai.com",
+        // target: "_blank",
         offset: 0,
       }, {
         id: "cashback_section",
