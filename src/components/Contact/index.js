@@ -97,8 +97,8 @@ class Contact extends Component {
   render() {
     return (
       <React.Fragment>
-        <section id="contact_section" className={"contact-us ptb-100 " + (this.props.bgColor && this.props.bgColor === 'white' ? '' : 'gray-light-bg')}>
-          <div className="container">
+        <section id="contact_section" className={"contact-us ptb-100 alternative-background"}>
+          <div className="mt-5 container">
             <div className="row">
               <div className="col-md-5">
                 <div className="section-heading">

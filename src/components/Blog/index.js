@@ -15,7 +15,7 @@ class Blog extends Component {
   render() {
     return (
       <React.Fragment>
-        <section id="blog_section" className="our-blog-section ptb-100 gray-light-bg">
+        <section id="blog_section" className="our-blog-section ptb-100">
           <div className="container">
             <div className="row">
               <div className="col-md-8">

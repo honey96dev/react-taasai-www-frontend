@@ -15,13 +15,13 @@ class About extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className="about-us ptb-100 gray-light-bg">
+        <section className="about-us ptb-100 alternative-background">
           <div id="ride_section" className="container">
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="about-content-right">
                   <img
-                    src="img/estimate.svg"
+                    src="img/estimate.png"
                     // src="img/delivery-app.svg"
                     width="500"
                     alt="about us"

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 
 // importing all the themes
 import Theme1 from "../themes/theme1";
@@ -39,23 +39,25 @@ export default class Routes extends React.PureComponent {
             {/*<Route exact path="/theme4" component={Theme4} />*/}
             {/*<Route exact path="/theme5" component={Theme5} />*/}
             {/*<Route exact path="/theme6" component={Theme6} />*/}
-            <Route exact path="/login1" component={Login1} />
-            <Route exact path="/login2" component={Login2} />
-            <Route exact path="/signup1" component={SignUp1} />
-            <Route exact path="/signup2" component={SignUp2} />
-            <Route exact path="/resetPassword" component={ResetPassword} />
-            <Route exact path="/changePassword" component={ChangePassword} />
-            <Route exact path="/download" component={Download} />
-            <Route exact path="/review" component={Review} />
-            <Route exact path="/faq" component={Faq} />
-            <Route exact path="/404" component={NotFound} />
-            <Route exact path="/comingSoon" component={ComingSoon} />
-            <Route exact path="/thankyou" component={ThankYou} />
-            <Route exact path="/team" component={Team} />
-            <Route exact path="/singleTeam" component={SingleTeam} />
-            <Route exact path="/blog" component={Blog} />
-            <Route exact path="/blogLeft" component={BlogLeft} />
-            <Route exact path="/blogRight" component={BlogRight} />
+            {/*<Route exact path="/login1" component={Login1} />*/}
+            {/*<Route exact path="/login2" component={Login2} />*/}
+            {/*<Route exact path="/signup1" component={SignUp1} />*/}
+            {/*<Route exact path="/signup2" component={SignUp2} />*/}
+            {/*<Route exact path="/resetPassword" component={ResetPassword} />*/}
+            {/*<Route exact path="/changePassword" component={ChangePassword} />*/}
+            {/*<Route exact path="/download" component={Download} />*/}
+            {/*<Route exact path="/review" component={Review} />*/}
+            {/*<Route exact path="/faq" component={Faq} />*/}
+            {/*<Route exact path="/404" component={NotFound} />*/}
+            {/*<Route exact path="/comingSoon" component={ComingSoon} />*/}
+            {/*<Route exact path="/thankyou" component={ThankYou} />*/}
+            {/*<Route exact path="/team" component={Team} />*/}
+            {/*<Route exact path="/singleTeam" component={SingleTeam} />*/}
+            {/*<Route exact path="/blog" component={Blog} />*/}
+            {/*<Route exact path="/blogLeft" component={BlogLeft} />*/}
+            {/*<Route exact path="/blogRight" component={BlogRight} />*/}
+
+            <Redirect to="/" />
           </Switch>
         </Router>
       </React.Fragment>

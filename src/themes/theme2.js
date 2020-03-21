@@ -29,10 +29,10 @@ class Theme extends Component {
           <HeroSection />
           {/*<PromoSection />*/}
           <RideSection />
-          <FareSection />
           <RoundUp />
+          <FareSection />
           {/*<FeatureSection />*/}
-          <Screenshots />
+          {/*<Screenshots />*/}
           <BlogSection />
           <Contact />
           {/*<VideoSection showDownloadBtn={true} />*/}
