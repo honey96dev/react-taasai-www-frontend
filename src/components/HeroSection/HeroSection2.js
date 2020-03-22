@@ -28,7 +28,7 @@ class HeroSection extends React.Component {
         >
           <div className="container">
             <div className="row align-items-center justify-content-between">
-              <div className="col-md-6 col-lg-6">
+              <div className="col-md-6 col-lg-6 order-1 order-md-0">
                 <div className="hero-content-left text-white mt-5">
                   <h1 className="hero-heading"><span>Get to where you want to be.</span></h1>
                   <h1 className="hero-heading">It's in your hand.</h1>
@@ -61,6 +61,9 @@ class HeroSection extends React.Component {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="col-md-6 col-lg-5 d-block d-md-none order-0 order-md-1">
+                <img src="img/hero-car.png" alt="img" className="img-fluid"/>
               </div>
             </div>
 
