@@ -1,25 +1,53 @@
 import React from "react";
 
+import Service from "services/FooterService";
+import {RESULT} from "core/globals";
+
 class Footer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      items: {},
+    };
   }
 
   componentDidMount() {
-    /**
-     * Your ajax will goes here to get data then call setState
-     */
+    Service.list()
+      .then(res => {
+        if (res.result === RESULT.SUCCESS) {
+          const items = {};
+          for (let item of res.data) {
+            if (!items[item.position]) {
+              items[item.position] = [];
+            }
+            items[item.position].push(item);
+          }
+          this.setState({
+            items: items,
+          });
+        } else {
+          this.setState({
+            items: {},
+          });
+        }
+      })
+      .catch(err => {
+        this.setState({
+          items: {},
+        });
+      })
   }
 
   render() {
+    const {items} = this.state;
+
     return (
       <React.Fragment>
         <footer className="footer-section">
           <div
             className={"footer-top background-img-2 " + (this.props.noSubscription ? 'py-5' : 'pt-150 pb-5')} 
             style={{
-              backgroundImage: "url('img/footer-bg.png')",
+              backgroundImage: "url('/img/footer-bg.png')",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center top",
               backgroundSize: "cover"
@@ -30,7 +58,7 @@ class Footer extends React.Component {
                 <div className="col-lg-3 mb-3 mb-lg-0">
                   <div className="footer-nav-wrap text-white">
                     <img
-                      src="img/logo-white-1x.png"
+                      src="/img/logo-white-1x.png"
                       alt="footer logo"
                       width="120"
                       className="img-fluid mb-3"
@@ -71,15 +99,20 @@ class Footer extends React.Component {
                   <div className="footer-nav-wrap text-white">
                     {/*<h5 className="mb-3 text-white">Others Links</h5>*/}
                     <ul className="list-unstyled">
-                      <li className="mb-2">
-                        <a href="/#">Customer Support</a>
-                      </li>
-                      <li className="mb-2">
-                        <a href="/#">About Us</a>
-                      </li>
-                      <li className="mb-2">
-                        <a href="/#">Partnership</a>
-                      </li>
+                      {!!items[1] && items[1].map((item, index) => (
+                        <li key={index} className="mb-2">
+                          <a href={`/fpage/${item.url}`}>{item.name}</a>
+                        </li>
+                      ))}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Customer Support</a>*/}
+                      {/*</li>*/}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">About Us</a>*/}
+                      {/*</li>*/}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Partnership</a>*/}
+                      {/*</li>*/}
                     </ul>
                   </div>
                 </div>
@@ -87,15 +120,20 @@ class Footer extends React.Component {
                   <div className="footer-nav-wrap text-white">
                     {/*<h5 className="mb-3 text-white">Others Links</h5>*/}
                     <ul className="list-unstyled">
-                      <li className="mb-2">
-                        <a href="/#">Privacy Policy</a>
-                      </li>
-                      <li className="mb-2">
-                        <a href="/#">Terms & Conditions</a>
-                      </li>
-                      <li className="mb-2">
-                        <a href="/#">Press Inquiries</a>
-                      </li>
+                      {!!items[2] && items[2].map((item, index) => (
+                        <li key={index} className="mb-2">
+                          <a href={`/fpage/${item.url}`}>{item.name}</a>
+                        </li>
+                      ))}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Privacy Policy</a>*/}
+                      {/*</li>*/}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Terms & Conditions</a>*/}
+                      {/*</li>*/}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Press Inquiries</a>*/}
+                      {/*</li>*/}
                     </ul>
                   </div>
                 </div>
@@ -103,15 +141,20 @@ class Footer extends React.Component {
                   <div className="footer-nav-wrap text-white">
                     {/*<h5 className="mb-3 text-white">Others Links</h5>*/}
                     <ul className="list-unstyled">
-                      <li className="mb-2">
-                        <a href="/#">Data Processing</a>
-                      </li>
-                      <li className="mb-2">
-                        <a href="/#">Data Transferring</a>
-                      </li>
-                      <li className="mb-2">
-                        <a href="/#">Cookies and Others</a>
-                      </li>
+                      {!!items[3] && items[3].map((item, index) => (
+                        <li key={index} className="mb-2">
+                          <a href={`/fpage/${item.url}`}>{item.name}</a>
+                        </li>
+                      ))}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Data Processing</a>*/}
+                      {/*</li>*/}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Data Transferring</a>*/}
+                      {/*</li>*/}
+                      {/*<li className="mb-2">*/}
+                      {/*  <a href="/#">Cookies and Others</a>*/}
+                      {/*</li>*/}
                     </ul>
                   </div>
                 </div>

@@ -16,37 +16,41 @@ class Header extends React.Component {
       {
         id: "hero_section",
         title: "Home",
-        type: this.LINK_TYPE.SECTION,
-        offset: 70,
+        type: this.LINK_TYPE.LINK,
+        link: "/",
+        target: undefined,
       }, {
         id: "ride_section",
         title: "Ride",
-        type: this.LINK_TYPE.SECTION,
-        offset: 70,
+        type: this.LINK_TYPE.LINK,
+        link: "/#ride_section",
+        target: undefined,
       }, {
         id: "roundup_section",
         title: "Round Up",
-        type: this.LINK_TYPE.SECTION,
-        // type: this.LINK_TYPE.LINK,
-        // link: "//roundup.taasai.com",
-        // target: "_blank",
-        offset: 0,
+        type: this.LINK_TYPE.LINK,
+        link: "/#roundup_section",
+        target: undefined,
       }, {
         id: "cashback_section",
         title: "Cashback",
-        type: this.LINK_TYPE.SECTION,
-        offset: 0,
+        type: this.LINK_TYPE.LINK,
+        link: "/#cashback_section",
+        target: undefined,
       }, {
         id: "blog_section",
         title: "Blog",
-        type: this.LINK_TYPE.SECTION,
-        offset: 0,
+        type: this.LINK_TYPE.LINK,
+        link: "/#blog_section",
+        target: undefined,
       }, {
         id: "contact_section",
         title: "Contact Us",
-        type: this.LINK_TYPE.SECTION,
-        offset: -20,
-      }];
+        type: this.LINK_TYPE.LINK,
+        link: "/#contact_section",
+        target: undefined,
+      }
+      ];
     let navLinks = [];
     navItems.map((item, index) => {
       navLinks.push(item.id);

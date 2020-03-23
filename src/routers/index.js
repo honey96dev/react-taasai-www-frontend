@@ -25,6 +25,7 @@ import SingleTeam from "../themes/singleTeam";
 import Blog from "../themes/blog";
 import BlogLeft from "../themes/blogLeft";
 import BlogRight from "../themes/blogRight";
+import FPage from "themes/fpage";
 
 export default class Routes extends React.PureComponent {
   render() {
@@ -33,6 +34,7 @@ export default class Routes extends React.PureComponent {
         <Router>
           <Switch>
             <Route exact path="/" component={Theme2} />
+            <Route exact path="/fpage/:page" component={FPage} />
             {/*<Route exact path="/theme1" component={Theme1} />*/}
             {/*<Route exact path="/theme2" component={Theme2} />*/}
             {/*<Route exact path="/theme3" component={Theme3} />*/}

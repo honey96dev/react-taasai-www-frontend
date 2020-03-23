@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import apis from "core/apis";
+import {setBaseUrl} from "apis/fetch";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+setBaseUrl(apis.baseUrl);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
